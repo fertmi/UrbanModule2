@@ -1,11 +1,12 @@
 # Функции в Python
 # Функция создания матрицы
 def get_matrix(n, m, the_value):
-    matrix=[0]*n
+    matrix=[]
     for i in range(0, n):
-        matrix[i]=[0]*m
+        inner_matrix = []
         for j in range(0, m):
-            matrix[i][j] = the_value
+            inner_matrix.append(the_value)
+        matrix.append(inner_matrix)
     return matrix
 
 # Вызов функции
