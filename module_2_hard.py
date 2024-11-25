@@ -10,8 +10,7 @@ def cipher():
                 variable = second_pair
         first_pair += 1
     return result
-reply = 0
-while reply == 0:                                   # цикл для повторения ввода числа первой пары
+while True:                                   # цикл для повторения ввода числа первой пары
     n = int(input('Введите число от 3 до 20, для выхода 0: '))
     if n == 0:
         print('До свидания')
